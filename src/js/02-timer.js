@@ -22,6 +22,11 @@ const options = {
   onClose(selectedDates) {
     if (selectedDates[0] < Date.now()) {
       Notify.failure('Please choose a date in the future');
+      clearInterval(timerId);
+      daysRef.textContent = '00';
+      hoursRef.textContent = '00';
+      minutesRef.textContent = '00';
+      secondsRef.textContent = '00';
       return;
     }
     selectedDate = selectedDates[0];
