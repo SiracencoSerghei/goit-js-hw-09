@@ -11,7 +11,7 @@ function getRandomHexColor() {
 };
 
 function onStartBtnClick (event) {
-    startBtn.setAttribute('desabled', true);
+    startBtn.setAttribute('disabled', true);
 timerId = setInterval(bodyColorSwitch, 1000)
 };
 
@@ -21,5 +21,5 @@ function bodyColorSwitch (){
 
 function onStopBtnClick (event) {
 clearInterval(timerId);
-startBtn.removeAttribute('desabled');
+startBtn.removeAttribute('disabled');
 };
