@@ -5,6 +5,7 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const inputRef = document.querySelector('#datetime-picker');
 const startButton = document.querySelector('[data-start]');
+startButton.setAttribute('disabled', true);
 
 const daysRef = document.querySelector('[data-days]');
 const hoursRef = document.querySelector('[data-hours]');
