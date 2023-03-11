@@ -15,6 +15,7 @@ function createPromise(position, delay) {
   });
 };
 
+
      function onFormSubmit (event) {
         event.preventDefault();
 const {delay, step, amount} = event.currentTarget;
